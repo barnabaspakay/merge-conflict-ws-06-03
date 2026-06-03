@@ -12,7 +12,15 @@ const workshop = {
         },]
 };
 
-
+function displayWorkshop(workshop) {
+    console.log(`Workshop Name: ${workshop.name}`);
+    console.log(`Description: ${workshop.description}`);
+    console.log("Steps:");
+    workshop.steps.forEach((step, index) => {
+        console.log(`${index + 1}. ${step.title}`);
+        console.log(`   ${step.content}`);
+    });
+}
 
 
 
