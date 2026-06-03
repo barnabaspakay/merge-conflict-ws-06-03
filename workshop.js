@@ -27,7 +27,13 @@ const workshop = {
 
 
 
+function addStep(workshop, title, content) {
+    workshop.steps.push({ title, content });
+}
 
+addStep(workshop, "Step 3: Resolve the Conflict", "Use a text editor or Git's built-in tools to resolve the conflict by choosing which changes to keep.");
+
+displayWorkshop(workshop);
 
 
 
